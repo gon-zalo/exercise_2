@@ -3,36 +3,9 @@ import os
 import sys
 os.chdir(sys.path[0])
 
-import requests
-from bs4 import BeautifulSoup
 import torch
 import random
 import matplotlib as plt
-
-# SCRAPING CODE ---------------------------------------------------------------------
-
-# names_list = [] # empty list to append the names to
-# for page in range(1, 14): # there are 13 pages in the website
-
-#     url = f'https://imiennik.net/imiona-meskie.html?cp_page={page}'
-#     print(f'Fetching names... Current page: {page}')
-#     response = requests.get(url)
-#     soup = BeautifulSoup(response.text, 'html.parser') # gets the html of the url
-#     table = soup.find('table', class_='tabb') # gets the table where the names are stored, this is needed so that the code does not fetch other names in the website
-
-#     names = table.find_all('a', attrs={'boy'}) # getting the names out of the table, they are in an a tag 
-#     for name in names: # names is a list, for loop to iterate over the list and append the names to the list above
-#         names_list.append(name.get_text())
-
-# for name in names_list: # 'imiona męskie' means 'male names', it is under an a tag too in the website and it gets scraped, this is a simple quick fix
-#     if name == 'Imiona męskie': 
-#         names_list.remove(name)
-
-# # saving names_list in a .txt file
-# with open ('names.txt', 'a', encoding='utf-8') as f:
-#     for name in names_list:
-#         print(name.lower(), file=f)
-
 
 # NEURAL NETWORK CODE ---------------------------------------------------------------
 
