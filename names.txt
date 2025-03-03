@@ -12,7 +12,7 @@ agaton
 agrypin
 ajdin
 albert
-alan aluś
+alan
 albin
 albrecht
 aleks
@@ -336,7 +336,6 @@ maryn
 mateusz
 maurycjusz
 maurycy
-maurycjusz
 medard
 melchior
 metody
