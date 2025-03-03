@@ -68,6 +68,6 @@ for name in old_names:
     cleaned_names = [name for name in cleaned_names if name] # removes empty strings
 
 print(cleaned_names)
-# saving names_list in a .txt file
+# saving cleaned_names in a .txt file
 with open ('old_names.txt', 'w', encoding='utf-8') as f:
     f.write('\n'.join(cleaned_names))
